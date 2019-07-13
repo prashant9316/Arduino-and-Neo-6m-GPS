@@ -11,7 +11,7 @@ void setup(){
 }
 
 void loop(){
-  while (gpss.available() > 0){
+  while (gps.available() > 0){
     // get the byte data from the GPS
     byte gpsData = gps.read();
     Serial.write(gpsData);
